@@ -39,10 +39,10 @@ class MyApp extends StatelessWidget {
 
 double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
   double scaleFactor = getScaleFactor(context);
-  double responsiveFontSaize = scaleFactor * fontSize;
+  double responsiveFontSize = scaleFactor * fontSize;
   double upperLimit = fontSize * 1.2;
   double lowerLimit = fontSize * .8;
-  return responsiveFontSaize.clamp(lowerLimit, upperLimit);
+  return responsiveFontSize.clamp(lowerLimit, upperLimit);
 }
 
 double getScaleFactor(BuildContext context) {
